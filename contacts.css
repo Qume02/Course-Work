@@ -1,0 +1,415 @@
+body {
+    margin: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 250px;
+    width:1440px;
+}
+/* Меню и header */
+header {
+    background: #F9F9E7;
+    height: 120px;
+}
+
+header .menu a {
+    font-size: 26px;
+    text-decoration: none;
+    color:rgba(0,0,0,1);
+    margin-top:24px;
+    padding-right: 0px;
+}
+
+header .menu a:hover {
+    color:rgb(155, 6, 6);
+}
+
+header .menu {
+    display:flex;
+    justify-content: space-evenly;
+}
+
+header .menu a:first-child {
+    margin-left:60px;
+}
+
+header .menu a:last-child {
+    padding-right:0px;
+}
+
+.line {
+    border-bottom:1px solid #070707;
+    margin-left:200px;
+    margin-top: 28px;
+    width: 1098px;
+}
+
+
+/* main */
+main {
+    background: #F9F9E7;
+    height: 1450px;
+}
+
+main, .link {
+    color:#070707;
+}
+
+.main-title {
+    padding-top:20px;
+    text-align: center;
+    font-size: 42px;
+}
+
+.main-title, #left-title, #right-title {
+    font-weight: 600;
+}
+
+.main-names {
+    width:1030px;
+    height: 100px;
+    padding-bottom: 30px;
+    margin-left:211px;
+}
+
+#left_title_main {
+    margin-bottom: 70px;
+    margin-bottom: 30px;
+}
+
+#right_title_main {
+    margin-left: 500px;
+    margin-right: 10px;
+}
+
+#left_title_main , #right_title_main {
+    font-style:italic;
+    font-size:24px;
+    margin-top: 55px;
+    height: 40px;
+}
+
+#clock {
+    font-size:32px;
+    margin-top: 50px;
+    border: solid rgb(204, 192, 192);
+}
+
+.main {
+    width:1030px;
+    height: 260px;
+    padding-bottom: 30px;
+    margin-left:211px;
+}
+
+.main-info {
+    width:1030px;
+    height: 260px;
+    padding-bottom: 30px;
+    margin-left:211px;
+}
+
+.main-map {
+    width:1030px;
+    height: 260px;
+    padding-bottom: 30px;
+    margin-left:211px;
+}
+
+#mrg-top-20 {
+    margin-top:20px;
+}
+
+#mrg-top-15 {
+    margin-top:15px;
+}
+
+.left-main {
+    justify-content: flex-start;
+    align-items:flex-start;
+    flex-direction: column;
+}
+
+.right-main {
+    justify-content:flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    font-size: 22px;
+}
+
+/* footer */
+footer {
+    height: 350px;
+    background: #CBE1DC;
+    color:#000000;
+}
+
+.footer { 
+    width:1030px;
+    margin-left:211px;
+}
+
+#footer-left {
+    justify-content: flex-start;
+    align-items:flex-start;
+}
+
+#footer-left, #footer-right {
+    flex-direction: column;
+}
+
+#footer-right {
+    justify-content:flex-end;
+    align-items: flex-end;
+}
+
+#left-title {
+    margin-left:200px;
+}
+
+#right-title {
+    margin-right: 275px;
+}
+
+#left-title, #right-title {
+    font-size: 26px;
+    margin-top:20px;
+}
+
+#map-footer {
+    width:30%;
+    margin-left:115px;
+}
+
+#last-left-det {
+    font-size:18px;
+    margin-left:100px;
+}
+
+#address-img {
+    width: 20px;
+    margin-bottom:-50px;
+    margin-bottom:-45px;
+}
+
+#mail-img {
+    width: 40px;
+    margin-right: 140px;
+    margin-bottom:-35px;
+}
+
+#phone-img {
+    width: 35px;
+    margin-right: 190px;
+    margin-bottom:-30px;
+}
+
+#address-img, #mail-img, #phone-img {
+    margin-left:-50px;
+}
+
+#address, #mail, #phone {
+    font-size:22px;
+}
+
+.dist, #map-footer {
+    margin-top: 30px;
+}
+
+/* медиазапрос для телефонов */
+@media (max-width: 480px) {
+    body {
+        margin: 0;
+        width:480px;
+    }
+
+    /* header */
+    header .menu{
+        width:60%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    header .menu a {
+        font-size: 22px;
+        width: 60%;
+        margin-bottom: 10px;
+        margin-left: 220px;
+        padding-right: 0px;
+    }
+
+    header .menu a:first-child {
+        margin-left:200px;
+    }
+
+    header .menu a:last-child {
+        margin-bottom: 0px;
+        margin-left:275px;
+    }
+
+    .line {
+        visibility: hidden;
+    }
+
+    /* main */
+    .main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width:350px;
+        margin-left:55px;
+        font-size: 16px;
+    }
+
+    main {
+        padding-top:200px;
+        padding-bottom: 0px;
+        height: 1700px;
+    }
+
+    .main-title {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+    }
+
+    .left-main, .right-main{
+        justify-content: flex-center;
+        align-items:flex-center;
+        flex-direction: column;
+    }
+    
+    .left-main {
+        margin-bottom: -100px;
+    }
+
+    .right-main {
+        margin-right: 120%;
+    }
+
+    .main {
+        height: 700px;
+        width: 400px;
+    }
+
+    .main-names {
+        width:250px;
+        height: 120px;
+        padding-bottom: 0px;
+    }
+
+    .main-info, .main, .main-names, .main-map {
+        margin-left:30px;
+    }
+
+    #left_title_main {
+        margin-left: -10px;
+        margin-right: 10px;
+        width: 75px;
+    }
+
+    #right_title_main {
+        margin-left: 140px;
+        margin-right: 40px;
+        width: 75px;
+    }
+
+    #clock {
+        font-size:18px;
+        margin-top: 60px;
+        height: 20px;
+    }
+
+    #left_title_main, #right_title_main {
+        font-size:18px;
+    }
+
+    .main-info {
+        width:450px;
+        height: 260px;
+        padding-bottom: 30px;
+    }
+    
+    .main-map {
+        width:400px;
+        height: 160;
+        padding-bottom: 100px;
+    }
+
+    .yandex-map {
+        height:450px;
+    }
+
+    /* footer */
+    
+    footer {
+        height: 270px;
+    }
+
+    /* left side */
+    #left-title {
+        margin-left:50px;
+        width:200px;
+    }
+    
+    #map-footer {
+        margin-top: 15%;
+        width:80%;
+        margin-left:10%;
+    }
+
+    #last-left-det {
+        margin-left:100px;
+    }
+
+    /*right side  */
+    #right-title {
+        margin-left:60px;
+    }
+    
+    #left-title, #right-title {
+        font-weight: 600;
+        font-size: 20px;
+        margin-top:20px;
+    }
+
+    #address-img, #mail-img, #phone-img {
+        margin:0;
+        padding:0;
+        visibility:hidden;
+    }
+
+    #address, #mail, #phone {
+        font-size:14px;
+    }
+    
+    #last-left-det {
+        font-size:14px;
+        margin-left: 5%;
+        width:250px;
+    }
+
+    #address {
+        width: 200px;
+        margin-left:30px;
+    }
+
+    #mail {
+        margin-left:8%;
+    }
+
+    #phone {
+        margin-left:8%;
+    }
+
+    .dist {
+        margin-top: 4px;
+    }
+}
